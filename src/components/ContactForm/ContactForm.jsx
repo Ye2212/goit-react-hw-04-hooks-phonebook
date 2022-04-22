@@ -39,7 +39,7 @@ function ContactForm({ onSubmit }) {
             <Label>
                 <Text>Number</Text>
                 <Input
-                    placeholder="+XX XXX XXX XX XX"
+                    placeholder=""
                     type="tel"
                     name="number"
                     value={number}
