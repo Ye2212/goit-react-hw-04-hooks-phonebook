@@ -2,6 +2,7 @@
 // import { Component } from 'react';
 import { useState } from 'react';
 import { Form, Label, Text, Input, AddContactBtn } from './ContactForm.styled';
+import { FiUserPlus } from "react-icons/fi";
 
 function ContactForm({ onSubmit }) {
     const [name, setName] = useState('');
@@ -48,8 +49,8 @@ function ContactForm({ onSubmit }) {
                     required
                 />
             </Label>
-            <AddContactBtn type="submit">Add contact</AddContactBtn>
-        </Form>
+            <AddContactBtn type="submit"><span style={{ marginRight: '10px' }}>Add</span><FiUserPlus /></AddContactBtn>
+        </Form >
     );
 }
 

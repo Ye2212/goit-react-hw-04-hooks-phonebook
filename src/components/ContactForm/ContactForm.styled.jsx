@@ -24,6 +24,7 @@ export const AddContactBtn = styled.button`
 display: flex;
 align-items: center;
 justify-content: center;
+opacity: 0.4;
 
 width: 200px;
 height: 40px;
@@ -35,4 +36,8 @@ border: none;
 border-radius: 4px;
 
 cursor: pointer;
-transition: background-color var(--main-hover-animation);`
+transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+&:hover,
+&:focus {
+  opacity: 1;
+}`

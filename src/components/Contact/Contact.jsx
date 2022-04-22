@@ -1,5 +1,6 @@
 import propTypes from 'prop-types';
 import { ContactItem, DeleteBtn, Name, Number } from './Contact.styled';
+import { FaTrash } from 'react-icons/fa'
 
 function Contact({ name, number, contactId, onDeleteContact }) {
     return (
@@ -8,7 +9,7 @@ function Contact({ name, number, contactId, onDeleteContact }) {
             <DeleteBtn
                 type="button"
                 onClick={() => onDeleteContact(contactId)}
-            >Delete</DeleteBtn>
+            ><FaTrash /></DeleteBtn >
         </>
     )
 }
